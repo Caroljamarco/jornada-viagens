@@ -17,7 +17,7 @@ header {
   margin-top: 24px;
 }
 
-input[type="checkbox"]:checked ~ nav {
+.navigation-menu input[type="checkbox"]:checked ~ nav {
   display: block;
   position: absolute;
   top: 100%;
@@ -40,4 +40,28 @@ nav {
 .list-links li a {
   color: var(--text-secundary-color);
   text-decoration: none;
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu {
+    margin-top: 0;
+  }
+  .navigation-menu label {
+    display: none;
+  }
+  .navigation-menu nav {
+    display: block;
+  }
+  .navigation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+  }
+  .navigation-menu li {
+    margin: 0;
+  }
 }
