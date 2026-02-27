@@ -1,0 +1,68 @@
+/* SECTION TITLE */
+.categories .section-title {
+  width: 321px;
+  margin: 0 auto;
+}
+
+/* CARDS CONTAINER */
+.categories-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* CARD */
+.categories-cards .card {
+  width: 312px;
+  height: 220px;
+  background-color: var(--background-secondary-color);
+  text-align: center;
+  border-radius: 16px;
+  padding: 24px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--text-primary-color);
+}
+
+/* SINGLE LINE CARD */
+.categories-cards .card.single-line {
+  padding-top: 50px;
+}
+
+/* TRANSFER CARD IMAGE */
+.categories-cards .card.single-line.transfer img {
+  margin: 10px 0 20px;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .categories .section-title {
+    width: 100%;
+  }
+
+  .categories-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .categories-cards .card {
+    width: 430px;
+  }
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1440px) {
+  .categories-cards .card {
+    width: 280px;
+  }
+}
+
+/* OFFERS */
+.offers {
+  margin-bottom: 104px;
+}
