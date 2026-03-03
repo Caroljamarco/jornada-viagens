@@ -1,0 +1,69 @@
+.payments .image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: 460px;
+  margin-top: 24px;
+  width: 100%;
+}
+.payments .content-container .image-gallery .image.first {
+  background: url(../img/first-img-mobile.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.payments .content-container .image-gallery .image.second {
+  background: url(../img/second-img-mobile\ .png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.payments .content-container .image-gallery .image.third {
+  background: url(../img/thirty-img-mobile.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.payments .content-container .image-gallery .colspan-2 {
+  grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+  .payments .content-container .image-gallery .image.first {
+    background: url(../img/Montagem\ japão\ 1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .payments .content-container .image-gallery .image.second {
+    background: url(../img/Montagem\ japão\ 2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .payments .content-container .image-gallery .image.third {
+    background: url(../img/Montagem\ japão\ 3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payments .content-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .payments .content-container {
+    justify-content: space-between;
+  }
+  .payments .content-container .text-content {
+    width: 360px;
+  }
+}
+.payments .content-container .image-gallery {
+  .payments .image-gallery {
+    width: 790px;
+    margin: 0;
+  }
+}
