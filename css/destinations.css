@@ -1,8 +1,13 @@
 .destination-items {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 24px;
+}
+
+.destinations .item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .destinations .item .img-item {
@@ -29,15 +34,15 @@
   margin-bottom: 24px;
 }
 
+.destinations .item footer {
+  margin-top: auto;
+}
+
 .destinations .button {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .destinations {
-    width: 648px;
-  }
-
   .destinations .item .img-item {
     height: 452px;
   }
@@ -55,18 +60,12 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .destinations {
-    width: 900px;
-  }
-}
-
 @media screen and (min-width: 1440px) {
-  .destinations {
-    width: 1200px;
-  }
-
   .destination-items {
     flex-direction: row;
+  }
+
+  .destinations .item {
+    flex: 1;
   }
 }
