@@ -1,7 +1,16 @@
-.hero-img {
+.hero-img,
+.bottom-hero .hero-img {
   height: 400px;
   width: 100%;
+}
+
+.hero .hero-img {
   background: url(../img/hero-mobile.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.bottom-hero .hero-img {
+  background: url(../img/Imagem\ pré\ rodapé\ 1.png) no-repeat center;
   background-size: cover;
 }
 
